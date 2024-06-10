@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: #fff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 26px;
+    color: black;
+    margin-right: 3px;
+}
+
+.logo span {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo img {
+    width: 60px;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #db8e00;
+}
+
+.navbar a.active {
+    color: #db8e00;
+}
+
+.jasa{
+    position: relative;
+    height: 80vh; 
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('okok.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    color: white; 
+}
+
+.teks-jasa{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: right;
+    right: 50%;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+.teks-jasa h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.web-judul{
+text-align: center;
+justify-content: center;
+font-weight: 800;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 28px;
+}
+
+
+.gambar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: left;
+    padding: 20px;
+    background: #D6E6F2;
+}
+
+.gambar img {
+    max-width: 50%;
+    margin-left: 1px;
+}
+
+.gambar p {
+    flex: 1;
+    text-align: left;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.bck{
+background: #D6E6F2;
+}
+
+.bck-btn{
+    background: #D6E6F2;
+}
+
+.btn-web{
+    background: black;
+    color: #fff;
+    padding: 13px;
+    border-radius: 8px;
+    margin-left: 28%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 100% ;
+    transition: .50s ease;
+    font-size: 20px;
+}
+
+.btn-web:hover{
+    transform: translateX(10px);
+    padding: 10px;
+    background: #db8e00;
+    transition: 1s;
+}
+
+.app-judul{
+font-size: 28px;
+font-weight: 800;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+justify-content: center;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: left;
+    padding: 20px;
+    background: #F2E8D6;
+}
+
+.app img {
+    max-width: 50%;
+    margin-left: 1px;
+}
+
+.app p {
+    flex: 1;
+    text-align: left;
+    margin-left: 200px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.bck-app{
+background: #F2E8D6;
+}
+
+.btn-app{
+background: black;
+color: #fff;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+border-radius: 8px;
+cursor: pointer;
+padding: 13px;
+transition: all .50 ease;
+margin-bottom: 100% ;
+margin-left: 28%;
+}
+
+.btn-app:hover{
+    transform: translateX(10px);
+    background: #ffa600;
+    transition: 1s;
+    padding: 10px;
+}
+
+.credit{
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 200;
+}
+
+.gaga{
+    color: blue;
+    font-weight: 700;
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: #B3C8CF;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover{
+        color: #0051d4;
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color: #0051d4;
+    }
+    .navbar.open{
+        right: 2%;
+    }
+    
+}
